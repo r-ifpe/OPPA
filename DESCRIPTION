@@ -1,11 +1,13 @@
 Package: OPPA
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Title: Function to OPPA project
+Version: 0.1.0.9000
+Author: c(
+    person("Arthur", "Lima", email = "alam@discente.ifpe.edu.br", role = c("aut", "cre")),
+    person("Ítalo", "Poliesti", email = "ipr@discente.ifpe.edu.br", role = "aut"),
+    )
+Maintainer: Arthur Lima <alam@discente.ifpe.edu.brt>
+Description: This function is used to read a xlsx file.
+License:  GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
