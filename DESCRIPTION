@@ -1,11 +1,13 @@
 Package: OPPA
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Function to read xl
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: GPL (<= 2)
+Author: c(
+    person("Ítalo", "Poliesti", email = "ipr@discente.ifpe.edu.br", role = c("aut", "cre")),
+    person("Arthur", "Lima", email = "alam@discente.ifpe.edu.br", role = "aut"),
+    )
+Maintainer: Ítalo Poliesti <ipr@discente.ifpe.edu.br>
+Description: This function is used to read a xlsx file.
+License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
