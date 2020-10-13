@@ -13,5 +13,5 @@ Encoding: UTF-8
 LazyData: true
 Imports:
     openxlsx,
-    tibble,
+    tidyverse,
     dplyr (>= 0.7.2)
