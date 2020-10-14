@@ -8,10 +8,11 @@ Author: c(
     )
 Maintainer: Arthur Lima <alam@discente.ifpe.edu.brt>
 Description: This function is used to read a xlsx file.
-License:  GPL (>= 2)
+License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
 Imports:
     readxl,
     tibble,
     dplyr (>= 0.7.2)
+RoxygenNote: 7.1.1
