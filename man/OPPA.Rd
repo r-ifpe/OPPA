@@ -21,8 +21,6 @@ By now, this function suports any XLSX file.
 \examples{
 # these datasets are real ones. But it's here just for test purpose.
 
-# example selecting the file
-OPPA("E:/Back-up/Projetos - FNO/R projects/Ic/OPPA/inst/extdata/arquivo.xlsx")
 
 class(OPPA)
 }
