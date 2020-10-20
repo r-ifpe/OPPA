@@ -5,6 +5,7 @@ Version: 0.1.0.9000
 Author: c(
     person("Arthur", "Lima", email = "alam@discente.ifpe.edu.br", role = c("aut", "cre")),
     person("Ítalo", "Poliesti", email = "ipr@discente.ifpe.edu.br", role = "aut"),
+    person("Samuel", "Macedo", email = "samuelmacedo@recife.ifpe.edu.br", role = "aut"),
     )
 Maintainer: Arthur Lima <alam@discente.ifpe.edu.brt>
 Description: This function is used to read a xlsx file.
@@ -14,5 +15,6 @@ LazyData: true
 Imports:
     readxl,
     tibble,
-    dplyr (>= 0.7.2)
+    dplyr (>= 1.0.0)
 RoxygenNote: 7.1.1
+Roxygen: list(markdown = TRUE)
