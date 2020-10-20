@@ -5,6 +5,7 @@ Version: 0.1.0
 Author: c(
     person("Ítalo", "Poliesti", email = "ipr@discente.ifpe.edu.br", role = c("aut", "cre")),
     person("Arthur", "Lima", email = "alam@discente.ifpe.edu.br", role = "aut"),
+    person("Samuel", "Macedo", email = "samuelmacedo@recife.ifpe.edu.br", role = "aut"),
     )
 Maintainer: Ítalo Poliesti <ipr@discente.ifpe.edu.br>
 Description: This function is used to read a xlsx file.
@@ -12,6 +13,7 @@ License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
 Imports:
-    openxlsx,
-    tidyverse,
-    dplyr (>= 0.7.2)
+    readxl,
+    tibble,
+    dplyr (>= 1.0.0)
+RoxygenNote: 7.1.1

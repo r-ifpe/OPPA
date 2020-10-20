@@ -1,9 +1,17 @@
-library(openxlsx)
-library(dplyr)
-library(tidyverse)
+#' Read XLSX files related to the OPPA project
+#'
+#' @param path The file's path to the XSLX file.
+#'
+#' @return A data frame.
+#'
+#' @details  By now, this function suports any XLSX file.
+#'
+#' @examples
+#' # these datasets are real ones. But it's here just for test purpose.
+#'
+#' class(OPPA)
+#' @export
 
-path <- "./arquivos/"
-
-nome_do_arquivo <- "a33476f9c9114c539dd22609812b59d8.xlsx"
-
-OPPA <- dplyr::as_tibble(read.xlsx(paste0(path, nome_do_arquivo)))
+OPPA <- function(path){
+  dplyr::as_tibble(readxl::read_excel(path))
+}
