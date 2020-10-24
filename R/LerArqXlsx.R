@@ -10,9 +10,9 @@
 #' # these datasets are real ones. But it's here just for test purpose.
 #'
 #'
-#' class(OPPA)
+#' class(ReadExcell)
 #' @export
 
-OPPA <- function(path){
+ReadExcell <- function(path){
   dplyr::as_tibble(readxl::read_excel(path))
 }
