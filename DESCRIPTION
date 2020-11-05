@@ -1,7 +1,7 @@
 Package: OPPA
 Type: Package
-Title: Function to read xl
-Version: 0.1.0
+Title: Tools to Analyse OPPA project
+Version: 0.1.0.9001
 Author: c(
     person("Ítalo", "Poliesti", email = "ipr@discente.ifpe.edu.br", role = c("aut", "cre")),
     person("Arthur", "Lima", email = "alam@discente.ifpe.edu.br", role = "aut"),
