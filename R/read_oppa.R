@@ -7,11 +7,11 @@
 #' @details  By now, this function suports any XLSX file.
 #'
 #' @examples
-#' # these datasets are real ones. But it's here just for test purpose.
+#' # these datasets aren't real ones. But it's here just for test purpose.
 #'
-#' class(OPPA)
+#' oppa <- read_oppa(system.file("extdata/arquivos/oppa.xlsx",
+#'                               package = "OPPA"))
 #' @export
-
-OPPA <- function(path){
+read_oppa <- function(path){
   dplyr::as_tibble(readxl::read_excel(path))
 }
