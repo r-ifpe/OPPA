@@ -2,3 +2,6 @@
 ^\.Rproj\.user$
 ^\.travis\.yml$
 ^BASEUNIFICADA_class_ANALISE\.zip$
+^\.gitlab-ci\.yml$
+^\.github$
+^appveyor\.yml$
