@@ -36,7 +36,7 @@ tabela1 <- ReadExcell("./inst/extdata/arquivos/PAGAM_2.xlsx") %>%
   distinct()%>%
   pivot_longer(!Ano, names_to = "Status", values_to = "Values") %>%
   ggplot(mapping = aes(x = Ano, y = Values/1000000000, colour = Status, group = Status)) +
-  geom_line() + scale_y_continuous(labels = function(x){paste0(x, 'Bi')}) + theme_bw()
+  geom_line() + scale_y_log10(labels = function(x){paste0(x, 'Bi')}) + theme_bw()
 
 ggsave("At1.png")
 
