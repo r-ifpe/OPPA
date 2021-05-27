@@ -28,7 +28,9 @@ ReadExcell <- function(path){
 
 
 
-tabela1 <- ReadExcell("./inst/extdata/arquivos/PAGAM_2.xlsx") %>%
+tabela1 <- ReadExcell("./inst/extdata/arquivos/PAGAM_2.xlsx")
+
+grafo1 <- tabela1 %>%
   group_by(Ano) %>%
   summarise(Pago = sum(Pago)) %>%
   mutate("Pago Ajustado" = deflate(nominal_values = as.numeric(Pago),
@@ -36,7 +38,9 @@ tabela1 <- ReadExcell("./inst/extdata/arquivos/PAGAM_2.xlsx") %>%
   distinct()%>%
   pivot_longer(!Ano, names_to = "Status", values_to = "Values") %>%
   ggplot(mapping = aes(x = Ano, y = Values/1000000000, colour = Status, group = Status)) +
-  geom_line() + scale_y_continuous(labels = function(x){paste0(x, 'Bi')}) + theme_bw()
+  geom_line() + scale_y_log10(labels = function(x){paste0(x, 'Bi')}) + theme_grey()
+
+  print(grafo1)
 
 ggsave("At1.png")
 
